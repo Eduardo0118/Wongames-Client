@@ -6,9 +6,17 @@ const Heading = ({
   children,
   color = 'white',
   lineLeft = false,
-  lineBottom = false
+  lineBottom = false,
+  lineColor = 'primary',
+  size = 'medium'
 }: IHeadingProps) => (
-  <S.Wrapper color={color} lineLeft={lineLeft} lineBottom={lineBottom}>
+  <S.Wrapper
+    size={size}
+    color={color}
+    lineLeft={lineLeft}
+    lineBottom={lineBottom}
+    lineColor={lineColor}
+  >
     {children}
   </S.Wrapper>
 )

@@ -43,7 +43,7 @@ describe('<Checkbox />', () => {
   it('should dispatch onCheck when status changes', async () => {
     renderWithTheme(<Checkbox label="Checkbox" />)
 
-    expect(document.body).toHaveFocus
+    expect(document.body).toHaveFocus()
     userEvent.tab()
     expect(screen.getByRole('checkbox')).toHaveFocus()
   })

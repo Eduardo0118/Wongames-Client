@@ -85,6 +85,14 @@ describe('<TextField />', () => {
     expect(onInput).not.toHaveBeenCalled()
   })
 
+  it('Check if input render error message', () => {
+    renderWithTheme(<TextField error="Opss... Aconteceu algum erro" />)
+
+    expect(screen.getByText('Opss... Aconteceu algum erro')).toHaveStyle({
+      color: '#FF6347'
+    })
+  })
+
   it('Is accessible by tab', () => {
     renderWithTheme(
       <TextField label="TextField" labelFor="TextField" id="TextField" />

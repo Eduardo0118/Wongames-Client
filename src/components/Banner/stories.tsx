@@ -9,15 +9,9 @@ export default {
     title: 'Defy death',
     subtitle: '<p>Play the new <strong>CrashLands</strong> season',
     buttonLabel: 'Buy now',
-    buttonLink: '/games/defy-death'
+    buttonLink: '/games/defy-death',
+    ribbon: 'My Ribbon'
   }
 } as Meta
 
 export const Default: Story<BannerProps> = (args) => <Banner {...args} />
-
-Default.parameters = {
-  layout: 'fullscreen',
-  viewport: {
-    defaultViewport: 'mobile1'
-  }
-}

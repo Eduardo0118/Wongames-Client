@@ -1,10 +1,10 @@
-export type LineColor = 'primary' | 'secondary'
+export type LineColors = 'primary' | 'secondary'
 
 export type IHeadingProps = {
   children: React.ReactNode
   color?: 'white' | 'black'
   lineLeft?: boolean
   lineBottom?: boolean
-  lineColor?: LineColor
+  lineColor?: LineColors
   size?: 'small' | 'medium'
 }

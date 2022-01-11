@@ -11,6 +11,14 @@ describe('<Heading />', () => {
     })
   })
 
+  it('should render with font size huge', () => {
+    renderWithTheme(<Heading size="huge">Won Games</Heading>)
+
+    expect(screen.getByRole('heading', { name: /won games/i })).toHaveStyle({
+      fontSize: '5.2rem'
+    })
+  })
+
   it('should render a black heading when color is passed', () => {
     renderWithTheme(<Heading color="black">Won Games</Heading>)
     expect(screen.getByRole('heading', { name: /won games/i })).toHaveStyle({

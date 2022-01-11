@@ -22,7 +22,7 @@ describe('<FormSignUp />', () => {
   it('should render the text to sign in', () => {
     renderWithTheme(<FormSignUp />)
 
-    expect(screen.getByRole('link', { name: /Sign up/i })).toBeInTheDocument()
+    expect(screen.getByRole('link', { name: /Sign in/i })).toBeInTheDocument()
     expect(screen.getByText(/Already have an account/i)).toBeInTheDocument()
   })
 })
